@@ -1,0 +1,200 @@
+/* Todo contenido de la paginaweb */
+:root {
+	--mainColor: #033E75ff;
+	--secColor: #E4E6E7ff;
+	--fontColor: #000000ff;
+	--fontStyle: 'Roboto Mono', monospace;
+	--blurColor: #0e1b3c4d;
+	--bgColor: #8A9EAFff;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--fontStyle);
+}
+
+/* aca se trabaja, el menu con el menu desplegable, la foto de inicio o cabecera y la frase  */
+
+.headerContainer {
+	background-image: url("../Imagenes/Universidad_foto.jpg");
+	background-size: cover;
+	padding: 0 0 20em 0;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+/* solo es el menu flotante superior */
+
+.navbar {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	font-size: 1.5em;
+	background-color: var(--blurColor);
+	box-shadow: 3px 3px 10px rgb(14, 27, 60, 0.30);
+	backdrop-filter: blur(10px);
+}
+
+/* el derecho */
+
+.logoNavBar {
+	margin: 1rem 8rem 0 0;
+	align-items: right;
+	color: white;
+}
+
+/*mobile nav bar*/
+
+.mobileNavBars{
+	position: absolute;
+}
+
+/* el izquierdo */
+
+.navbarLeft {
+	margin: 1rem 0 0 2em;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 2em 0 0;
+}
+
+
+.subMenu>ul>li>a {
+	color: white;
+	text-decoration: none;
+	
+}
+
+.navbarLeft>ul {
+	list-style: none;
+	margin: 0 1rem 1rem 0;
+}
+
+.navbarLeft>ul>li>a {
+	text-decoration: none;
+	color: white;
+}
+
+/* se maneja los subemuns desplegables */
+
+.semilleros {
+	cursor: pointer;
+}
+
+.subMenu {
+	display: flex;
+	flex-flow: column wrap;
+	position: absolute;
+}
+
+.subMenu>ul>li {
+	list-style: none;
+	background-color: var(--blurColor);
+	padding: 0.5em 1em 0.5em 1em;
+	display: flex;
+	flex-flow: column wrap;
+
+}
+
+.subMenu>ul>li>a {
+	color: white;
+	text-decoration: none;
+}
+
+/* el titulo encima de la foto */
+
+.tituloPrincipal {
+	display: flex;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	margin: 5em 4em 0 4em;
+	padding: 0.5em 0 0.5em 0;
+	font-size: 3.4em;
+	background-color: var(--blurColor);
+	box-shadow: 3px 3px 10px rgb(14, 27, 60, 0.30);
+	backdrop-filter: blur(10px);
+
+}
+
+/* empieza la informacion regular */
+
+.container {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 1em 1em 20em 1em;
+	box-shadow: 0 -12px 20px -8px rgb(14, 27, 60);
+}
+
+.swiper {
+	width: 900px;
+	height: 500px;
+	box-shadow: 0 10px 20px 8px var(--blurColor);
+}
+
+.swiper-button-prev{
+	color: var(--secColor);
+}
+
+.bloqueContenido {
+	display: flex;
+	justify-content: justify;
+	align-items: center;
+	flex-flow: column wrap;
+	padding: 2rem 0 2rem 0;
+}
+
+.bloqueContenido>h2 {
+	margin: 0 0 2rem 0;
+}
+
+.normas {
+	border: solid 1px;
+	margin: 2rem 20% 0 20%;
+	box-shadow: 0 5px 10px 5px var(--blurColor);
+	background-color: var(--secColor);
+
+}
+
+.norma {
+	justify-content: justify;
+	margin: 2rem 5% 0 5%;
+}
+
+footer {
+	box-shadow: 0 -8px 10px -8px rgb(14, 27, 60);
+	background-color: var(--mainColor);
+	color: white;
+	padding: 1rem 0 2rem 0;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.containerInfoFooter{
+	margin: 0 5rem 0 5rem;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.infoFooter{
+	margin: 0.5rem 0 0 0;
+}
+
+#correoContacto{
+	color: green;
+}

@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*LA SECCION DEL HEATHER*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #325a7f;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1d3449, #325a7f), url(../img/fondoprincipal.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #27333f, #325a7f8c), url(../img/fondoprincipal.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    position: relative;
+}
+
+
+/*Posiciona la barra de busqueda al lado derecho de la pagina*/
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+
+/*Cambia las caracteristicas de los links del navegador*/
+
+nav>a {
+    color: whitesmoke;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+
+/*Posiciona la "ola" que se situa debajo de la imagen y esta en color blanco (para el efecto wave)*/
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*Posiciona el titulo principal y le cambia su color y atributos*/
+
+.textos-heather {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: 430px;
+    width: 100%;
+}
+
+.textos-heather>img {
+    width: 300px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.textos-heather>h1 {
+    font-size: 50px;
+}
+
+.textos-heather>h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+/*LA INFORMACION GENERAL*/
+.container{
+    padding: 0 10% 5% 10%;
+}
+
+/*Section1*/
+.section1 {
+    align-items: center;
+    padding: 10px 5% 10px 5%;
+    margin: 2% 0 10% 0;    
+}
+
+.contentSection1{
+    display: grid;
+    justify-items: center;
+}
+.contentSection1>h1{
+    padding: 0 0 20px 0;
+}
+
+.infoSection1{
+    display: grid;
+    grid-template-columns: auto auto;
+    color:white;
+}
+.infoSection1>img{
+    max-width: 900px;
+    height: 700px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.textSection1{
+    padding: 5px 0 0 20px;
+    background:#414141;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+.textSection1>p{
+    font-size:25px;
+    padding: 5% 5% 2% 2%;
+}
+
+/*section2*/
+
+.section2 {
+    margin: 2% 0 10% 0;
+}
+
+
+.methodSection2{
+    padding: 0 8% 5% 8%;
+    display:grid;
+    justify-content: center;
+    
+}
+
+.methodSection2>h1{
+    display: grid;
+    justify-content: center;
+    padding: 0 0 2% 0;
+}
+
+.methodSection2>p{
+    padding: 5% 5% 5% 5%;
+    font-size: 22px;
+    background-color: #414141;
+    color:white;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.activitiesSection2>h1{ 
+    display:grid;
+    justify-content:center;
+    margin: 0 0 2% 0;
+}
+
+.activitiesSection2{
+    display:grid;
+    grid-template-columns: auto;
+}
+
+.activitiesinfoSection2{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    background-color: #414141;
+    margin: 0 20% 0 20%;
+}
+
+.activity{
+    display: grid;
+    grid-template-columns: 5% auto;
+    margin: 0 20% 0 0%;
+}
+
+.activity>p{
+    padding: 0 0 0 10%; 
+    color:white;
+    font-size:20px;
+}
+
+.activity>h1{
+    display: grid;
+    justify-content:center;
+    color: white;
+    background-color: #325a7f;
+}
+
+
+
+/*section3---------------REVISION*/
+
+.projectSection3 {
+    align-items: center;
+    padding: 0 5% 10% 5%;
+}
+
+.titlecaptionSection3>img{
+    max-width: 400px;
+}
+
+.titlecaptionSection3>h1{
+    padding: 0 0 1% 0;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table{
+    background-color: #9b9b9b;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.titlesTable{
+    background-color: #325a7f;
+}
+
+/*section4------------- LO TENGO QUE SOLUCIONAR*/
+
+.section4>h1{
+    display:grid;
+    justify-content: center;
+    padding: 0 0 2% 0;
+}
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    background: #414141;
+    display: flex;
+    width: 40%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #325a7f;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card>.contenido-texto-card {
+    width: 60%;
+    color: #325a7f;
+}
+
+.cards .card>.contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+    color:white;
+}
+
+/*section5*/
+.section5{
+    align-items: center;
+    padding: 0 20% 10% 20%;
+}
+
+.titlecaptionSection5>img{
+    max-width: 400px;
+}
+
+
+
+
+/*Para el footer (parte final de la pagina)*/
+
+footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #325a7f;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}

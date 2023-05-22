@@ -1,0 +1,23 @@
+.navbarLeft>ul>li>a:hover {
+    color: black;
+}
+
+.submenuSemilleros>ul>li>a:hover {
+    color: black;
+}
+
+.inactive {
+    display: none;
+}
+
+.mobile{
+    visibility: hidden;
+}
+
+.noMobile{
+    visibility: visible;
+}
+
+#burguerMenu:hover{
+    transform: scale(1.2);
+}

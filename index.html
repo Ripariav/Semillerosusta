@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!--MetaDatos-->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!--Titulo de la Pestaña-->
+    <title>Facultad Industrial - USTA</title>
+
+    <!--css-->
+    <link rel='stylesheet' href='Assets/css/index.css'>
+    <link rel='stylesheet' href='Assets/css/efectos.css'>
+    <link rel='stylesheet' href='Assets/css/responsive.css'>
+
+    <!--Letra-->
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap' rel='stylesheet' />
+
+    <!--Para el carrusel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--FontAwsome (los iconos)-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
+        integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=='
+        crossorigin='anonymous' referrerpolicy='no-referrer' />
+
+    <!--ScrollReveal-->
+    <script src='https://unpkg.com/scrollreveal'></script>
+
+    <!--Gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class='headerContainer'>
+        <div class='navbar'>
+            <div class='navbarLeft noMobile scl'>
+                <ul>
+                    <li><a href='#normas'>Normas</a></li>
+                </ul>
+                <ul>
+                    <li><a href='#galeria'>Galeria</a></li>
+                </ul>
+                <ul>
+                    <li><a class='semilleros' id='semilleros'>Semilleros <i class='fa-solid fa-caret-down'></i></a></li>
+                    <div class='desplegable1 subMenu  inactive'>
+                        <ul>
+                            <li><a href='Gideollanos/index.html'>GideoLlanos</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href='Logprox/index.html'>LogProx</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href='Seinpro/index.html'>SeinPro</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href='Turing/index.html'>Turing</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <li><a href='#directivos'>Directivos</a></li>
+                </ul>
+                <!--Estilo navBar en celular-->
+                <div class='mobileNavBar'>
+                    <a class='semilleros mobile ' href='#'><i id='burguerMenu' class='fa-sharp fa-solid fa-bars fa-sm '
+                            style='color: #ffffff;'></i></a>
+                </div>
+            </div>
+           
+        </div>
+        <h1 class='tituloPrincipal scb' id='Tp'>FACULTAD DE INGENIERIA INDUSTRIAL</h1>
+    </div>
+    <div class='container'>
+        <div class='bloqueContenido galeria scb' id='galeria'>
+            <h2 class='tituloSection'>Galeria</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img src="https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/2962135/pexels-photo-2962135.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/3811127/pexels-photo-3811127.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" class="swiper-slide">
+                    <img src="https://images.pexels.com/photos/1267699/pexels-photo-1267699.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" class="swiper-slide">
+                    <img src="./Assets/Imagenes/gordo.jpg" alt="" class="swiper-slide">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </ul>
+            </p>
+        </div>
+        <div class='bloqueContenido normas scb' id='normas'>
+            <h2 class='tituloSection'>Normas</h2>
+            <p class='normasParrafo'>
+            <ol>
+                <li class="norma">Interés y compromiso: El ingreso al Semillero de Investigación requiere de un genuino
+                    interés por la
+                    investigación y un alto nivel de compromiso con el trabajo académico. Los aspirantes deben demostrar
+                    motivación y pasión por el conocimiento.
+                </li>
+                <li class="norma">Excelencia académica: Se espera que los aspirantes al Semillero de Investigación
+                    cuenten con un
+                    expediente académico destacado y un promedio de calificaciones sobresaliente. El rendimiento
+                    académico
+                    es un indicador importante de la capacidad de trabajo y dedicación.</li>
+                <li class="norma">Participación activa: Los miembros del Semillero de Investigación deben comprometerse
+                    a participar
+                    activamente en las actividades y proyectos del grupo. Se valorará la disposición para colaborar con
+                    otros miembros, compartir conocimientos y contribuir al avance colectivo.</li>
+                <li class="norma">Capacidad de trabajo en equipo: La investigación científica suele requerir de
+                    colaboración y trabajo en
+                    equipo. Los aspirantes deben mostrar habilidades para trabajar de manera eficiente y efectiva en
+                    conjunto con otros investigadores, fomentando la comunicación abierta, el respeto mutuo y la
+                    capacidad
+                    de escucha.</li>
+                <li class="norma">Ética y honestidad: La integridad académica y ética es fundamental en cualquier
+                    actividad de
+                    investigación. Los miembros del Semillero deben comprometerse a cumplir con altos estándares de
+                    honestidad académica, evitando el plagio, respetando los derechos de autor y siguiendo los
+                    principios
+                    éticos establecidos.</li>
+                <li class="norma">Disponibilidad de tiempo: La investigación implica una dedicación constante y un
+                    compromiso de tiempo.
+                    Los aspirantes deben asegurarse de contar con disponibilidad suficiente para participar en las
+                    reuniones, realizar investigaciones y cumplir con los plazos establecidos.</li>
+                <li class="norma">Flexibilidad y adaptabilidad: La investigación puede presentar desafíos y cambios en
+                    el camino. Los
+                    aspirantes deben mostrar flexibilidad y adaptabilidad para enfrentar situaciones nuevas, aprender de
+                    los
+                    errores y ajustar sus enfoques según sea necesario.</li>
+                <li class="norma">Respeto a la diversidad: El Semillero de Investigación valora la diversidad de
+                    perspectivas y
+                    experiencias. Se espera que los miembros respeten y valoren las diferencias culturales, étnicas, de
+                    género y de pensamiento, creando un ambiente inclusivo y colaborativo.</li>
+            </ol>
+        </div>
+        <div class='bloqueContenido semilleros' id='semilleros'>
+            <h2 class='tituloSection'>Semilleros</h2>
+            <div class="card">
+                <p class="tituloCard">SeinPro</p>
+                <p class="textCard">
+
+                </p>
+            </div>
+            <div class="card">
+                <p class="tituloCard">Turing</p>
+                <p class="textCard">
+
+                </p>
+            </div>
+            <div class="card">
+                <p class="tituloCard">GideoLlanos</p>
+                <p class="textCard">
+
+                </p>
+            </div>
+            <div class="card">
+                <p class="tituloCard">LogProx</p>
+                <p class="textCard">
+
+                </p>
+            </div>
+        </div>
+        <div class='bloqueContenido directivos' id='directivos'>
+            <h2 class='tituloSection'>Directivos</h2>
+        </div>
+    </div>
+
+    <footer>
+        <div class='containerFooter'>
+            <div class='containerInfoFooter'>
+                <h4  class="infoFooter">2023 Universidad Santo Tomás - Villavicencio - PBX (608) 678 42 60</h4>
+                <p  class="infoFooter">Campus Aguas Claras: Carrera 22 con Calle 1a - Vía Puerto López / Campus Loma Linda: Carrera 48 N° 19 - 05 Sur - Vía Acacías Villavicencio, Meta.</p>
+                <p  class="infoFooter">Notificaciones Judiciales y/o Extrajudiciales. El siguiente correo es de uso exclusivo para juzgados, tribunales y altas cortes o requerimientos de autoridades administrativas: </p>
+                <p id="correoContacto">ofjuridicavillavo@usantotomas.edu.co</p>
+                <p  class="infoFooter"><strong>© Todos los derechos reservados</strong></p>                
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!--Carrusel-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--Personales-->
+    <script src='Assets/js/menu.js'></script>
+    <script src='./main.js'></script>
+
+</body>
+
+</html>

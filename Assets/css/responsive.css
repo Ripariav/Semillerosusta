@@ -1,0 +1,16 @@
+@media screen and (max-width: 800px) {    
+    body{
+        font-size: 15px;
+    }
+
+    .mobile{
+        visibility: visible;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .noMobile{
+        visibility: hidden;
+    }
+}
