@@ -36,13 +36,14 @@ ScrollReveal().reveal('.scr',{
 })
 
 //carrusel con swiper js
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.galeriaUsta', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 
     // Navigation arrows
@@ -50,4 +51,36 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    autoplay: {
+		delay: 3000,
+ 	},
 });
+
+//carrusel con swiper js
+const swiper2 = new Swiper('.actividadesUsta', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+		delay: 6000,
+ 	},
+    slidesPerView: 1,
+    centeredSlides: true,
+
+
+});
+
+
