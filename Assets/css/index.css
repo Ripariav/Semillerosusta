@@ -3,6 +3,7 @@
 	--mainColor: #033E75ff;
 	--secColor: #E4E6E7ff;
 	--fontColor: #000000ff;
+	--secFontColor: whitesmoke;
 	--fontStyle: 'Roboto Mono', monospace;
 	--blurColor: #0e1b3c4d;
 	--bgColor: #8A9EAFff;
@@ -142,8 +143,20 @@ body {
 	box-shadow: 0 10px 20px 8px var(--blurColor);
 }
 
-.swiper-button-prev{
-	color: var(--secColor);
+.swiper-pagination-bullet-active {
+	background-color: var(--mainColor) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    right:5px;
+    padding: 10px;
+	border-radius: 5px;
+    color: var(--mainColor) !important;
+    fill: var(--mainColor) !important;
+    stroke: var(--mainColor) !important;
 }
 
 .bloqueContenido {
@@ -209,14 +222,37 @@ body {
 	margin: 1rem 0 0 0;
 }
 
-.actividadesFoto:hover{
+/*Actividades*/
+
+.swiper-slide{
+	background-size: cover;
+	background-position: center center;
+	color: var(--secFontColor)
+}
+
+.showInfoActividades{
 	filter: brightness(0.50);
 }
 
-.actividadesInfo{
-	position: absolute;
-	color: var(--fontColor);
-	z-index: 1;
+.slide-1{
+	background-image: url(../imagenes/imgcarrusel/fotocarrusel1.jpg);
+}
+.slide-2{
+	background-image: url(../imagenes/imgcarrusel/fotocarrusel5.jpg);
+}
+.slide-3{
+	background-image: url(../imagenes/imgcarrusel/fotocarrusel3.jpg);
+}
+.slide-4{
+	background-image: url(../imagenes/imgcarrusel/fotocarrusel4.jpg);
+}
+
+
+
+.actividadesInfoTitulo,
+.actividadesInfoParrafo{
+	display: absolute;
+	color: white;
 }
 
 /* Footer */
