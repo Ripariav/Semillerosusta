@@ -25,7 +25,7 @@ body {
 /* aca se trabaja, el menu con el menu desplegable, la foto de inicio o cabecera y la frase  */
 
 .headerContainer {
-	background-image: url("../Imagenes/Universidad_foto.jpg");
+	background-image: url('../imagenes/universidad_foto.jpg');
 	background-size: cover;
 	padding: 0 0 20em 0;
 	background-repeat: no-repeat;
