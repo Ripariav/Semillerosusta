@@ -227,7 +227,28 @@ body {
 .swiper-slide{
 	background-size: cover;
 	background-position: center center;
-	color: var(--secFontColor)
+	color: var(--secFontColor);
+}
+
+.text-container{
+	display: flex;
+	flex-flow:column wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 300px 400px 0 0;
+	padding: 30px 0 30px 0;
+	background-color: var(--bgColor);
+	border-radius: 0 20px 20px 0;
+	box-shadow: 0 10px 20px -8px var(--fontColor);
+}
+
+.text-container>p{
+	font-size: 10px;
+	margin: 0 0 0 20px;
+}
+
+.text-container>h3{
+	margin: 0 0 1rem 20px;
 }
 
 .showInfoActividades{
