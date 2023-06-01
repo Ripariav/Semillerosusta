@@ -211,7 +211,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-flow: column nowrap;
+	flex-flow: column 	wrap;
     margin: 1em;
     background-color: var(--mainColor);
     padding: 2em;
@@ -383,8 +383,6 @@ footer {
 	margin: 1rem 0 1rem 0;
 }
 
-.containerDivisores{
-}
 
 .linkSocialMedia{
 	display: flex;
