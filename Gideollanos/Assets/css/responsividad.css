@@ -1,90 +1,16 @@
-/*RESPONSIVIDAD*/
-@media screen and (max-width:1850px) {
-    
-    /*Section1*/
-    
-    .infoSection1>img{
-        max-width: 100%;
-    }
-    
-    .textSection1>p{
-        font-size:20px;
-        padding-bottom: 5%;
-    }
-
-    .infoSection1{
-        margin: 0 12% 0 12%;
-    }
-
-    .infoSection1{
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    /*section2*/
-    .methodSection2>p{
-        margin: 0 12% 0 12%;
-    }
-
-}
-
-
 @media screen and (max-width:1000px) {
     
     /*esto es para la cabeza*/
     header {
         background-position: center;
     }
-    
-    /*section1*/
-    .section1 {
-        width: 95%;
-    }
-    /*tables*/
 
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-    /*section2*/
-    .activity{
+    .infoPresentacion{
         display: grid;
         grid-template-columns: auto;
-        margin: 0 0 0 0;
-        padding: 0 0 5% 0;
     }
-    .activity>p{
-        padding: 2% 0 0 5%;
-    }
-
-    /* Tables */
-    .cards {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .cards .card {
-        width: 90%;
-    }
-    .cards .card:first-child {
-        margin-bottom: 30px;
-    }
-    /* Contacto */
-    .servicio-cont {
-        justify-content: center;
-        flex-direction: column;
-    }
-    .servicio-ind {
-        width: 100%;
-        text-align: center;
-    }
-    .servicio-ind:nth-child(1),
-    .servicio-ind:nth-child(2) {
-        margin-bottom: 60px;
-    }
-    .servicio-ind img {
-        width: 90%;
-    }
+    
+    
 }
 
 @media screen and (max-width:500px) {
@@ -100,33 +26,6 @@
     }
     .textos-header h2 {
         font-size: 20px;
-    }
-    /* Quienes somos */
-    .section1>img {
-        margin-bottom: 60px;
-        width: 99%;
-    }
-    .textSection1 {
-        width: 95%;
-    }
-    /*Nuestros Proyectos*/
-    .proyectos {
-        width: 90%;
-    }
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-    /* Estudiantes */
-    .cards .card {
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .cards .card img {
-        width: 90px;
-        height: 90px;
     }
     /* Contacto */
     .contenedor-footer {
