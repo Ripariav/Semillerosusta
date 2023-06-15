@@ -28,6 +28,43 @@
 
 }
 
+@media screen and (max-width:1600px) {
+    
+    /*esto es para la cabeza*/
+    header {
+        background-position: center;
+    }
+
+    .infoDescripcion{
+        font-size: 10px;
+    }
+    
+    
+}
+
+@media screen and (max-width:1350px) {
+    
+    /*esto es para la cabeza*/
+    header {
+        background-position: center;
+    }
+
+    .containerDescripcion>h1{
+        font-size: 1.2em;
+    }
+    .infoDescripcion{
+        font-size: 10px;
+    }
+    
+    .containerObjetivos>h1{
+        font-size: 1.1em;
+    }
+    .infoProyectos{
+        font-size: 10px;
+    }
+    
+}
+
 
 @media screen and (max-width:1000px) {
     
