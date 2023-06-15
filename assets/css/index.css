@@ -1,12 +1,15 @@
 /* Todo contenido de la paginaweb */
 :root {
-	--mainColor: #253b50;
-	--secColor: #687377;
-	--fontColor: #000000ff;
-	--secFontColor: whitesmoke;
+	--mainColor: #00468e;
+	--secColor: #00b0b9;
+	--thrdColor: #006666;
+	--fourthColor: #e5ffb8;
+	--fontColor: #ffffff;
+	--secFontColor: #0000;
 	--fontStyle: 'Roboto Mono', monospace;
 	--blurColor: #0e1b3c4d;
-	--bgColor: #ebecee;
+	--bgColor: #00b0b9;
+	--boxShadow: #0b08085a;
 }
 
 * {
@@ -21,6 +24,8 @@ html {
 
 body {
 	font-family: var(--fontStyle);
+	background-color: var(--fontColor);
+	color: var(--fontColor);
 }
 
 /* aca se trabaja, el menu con el menu desplegable, la foto de inicio o cabecera y la frase  */
@@ -50,7 +55,6 @@ body {
 .logoNavBar {
 	margin: 1rem 8rem 0 0;
 	align-items: right;
-	color: white;
 }
 
 /*mobile nav bar*/
@@ -70,7 +74,6 @@ body {
 
 
 .subMenu>ul>li>a {
-	color: white;
 	text-decoration: none;
 
 }
@@ -82,7 +85,7 @@ body {
 
 .navbarLeft>ul>li>a {
 	text-decoration: none;
-	color: white;
+	color: var(--fontColor);
 }
 
 /* se maneja los subemuns desplegables */
@@ -107,7 +110,7 @@ body {
 }
 
 .subMenu>ul>li>a {
-	color: white;
+	color: var(--fontColor);
 	text-decoration: none;
 }
 
@@ -115,7 +118,6 @@ body {
 
 .tituloPrincipal {
 	display: flex;
-	color: white;
 	justify-content: center;
 	text-align: center;
 	margin: 5em 4em 0 4em;
@@ -179,7 +181,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secFontColor);
 }
 
 
@@ -213,7 +214,7 @@ body {
 	justify-content: center;
 	flex-flow: column 	wrap;
     margin: 1em;
-    background-color: var(--mainColor);
+    background-color: var(--thrdColor);
     padding: 2em;
     border-radius:3px;
     max-width: fit-content;
@@ -245,8 +246,8 @@ body {
 .semillerosUsta{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
-	background-color: var(--mainColor);
-	box-shadow: 0 5px 10px 5px var(--blurColor);
+	background-color: var(--thrdColor);
+	box-shadow: 0 5px 10px 5px var(--boxShadow);
 	border-radius: 10px;
 }
 
@@ -260,9 +261,9 @@ body {
 	margin: 2rem 1.5rem 2rem 1.5rem;
 	border: solid 1px;
 	border-radius: 10px;
-	background-color: var(--secColor);
-	box-shadow: 0 5px 10px 5px var(--blurColor);
-	color: var(--secFontColor);
+	background-color: var(--mainColor);
+	box-shadow: 0 5px 10px 5px var(--boxShadow);
+	color: var(--fontColor);
 	overflow: hidden;
 }
 
@@ -309,9 +310,9 @@ body {
 	align-items: center;
 	margin: 500px 600px 0 0;
 	padding: 30px 0 30px 0;
-	background-color: var(--bgColor);
+	background-color: var(--thrdColor);
 	border-radius: 0 20px 20px 0;
-	box-shadow: 0 10px 20px -8px var(--fontColor);
+	box-shadow: 0 10px 20px -8px var(--boxShadow);
 }
 
 
@@ -349,14 +350,12 @@ body {
 .actividadesInfoTitulo,
 .actividadesInfoParrafo {
 	display: absolute;
-	color: white;
 }
 
 /* Footer */
 
 footer {
 	background-color: var(--mainColor);
-	color: white;
 	padding: 1rem 0 2rem 0;
 	display: flex;
 	flex-flow: row wrap;
@@ -395,7 +394,7 @@ footer {
 .linkSocialMedia>a{
 	list-style: none;
 	text-decoration: none;
-	color: var(--secFontColor);
+	color: var(--fontColor);
 	margin: 0 3rem 0 3rem;
 	font-size: 2rem;
 }
@@ -412,9 +411,9 @@ footer {
 .linkerFooter>a{
 	list-style: none;
 	text-decoration: none;
-	color: var(--secFontColor);
 	margin: 0 2rem 0 2rem;
 	cursor:pointer;
+	color: var(--fontColor);
 }
 
 #derechosReservados{

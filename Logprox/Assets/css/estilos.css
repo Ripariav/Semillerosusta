@@ -1,7 +1,15 @@
+:root{
+    --mainColor: #325a7f;
+    --secColor: #414141;
+    --fontColor: white;
+    --thirdColor: #9e9797;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
 html {
@@ -9,7 +17,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    color: var(--fontColor);
 }
 
 
@@ -34,8 +42,8 @@ header {
 /*Posiciona la barra de busqueda al lado derecho de la pagina*/
 
 nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
+    text-align: center;
+    padding: 30px 0 0 0;
 }
 
 
@@ -93,201 +101,243 @@ nav>a:hover {
 
 
 /*LA INFORMACION GENERAL*/
+
 .container{
-    padding: 0 10% 5% 10%;
-}
-
-/*Section1*/
-.section1 {
+    display:flex;
+    flex-flow: column wrap;
     align-items: center;
-    padding: 10px 5% 10px 5%;
-    margin: 2% 0 10% 0;    
-}
-
-.contentSection1{
-    display: grid;
-    justify-items: center;
-}
-.contentSection1>h1{
-    padding: 0 0 20px 0;
-}
-
-.infoSection1{
-    display: grid;
-    grid-template-columns: auto auto;
-    color:white;
-}
-.infoSection1>img{
-    max-width: 900px;
-    height: 700px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.textSection1{
-    padding: 5px 0 0 20px;
-    background:#414141;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-
-.textSection1>p{
-    font-size:25px;
-    padding: 5% 5% 2% 2%;
-}
-
-/*section2*/
-
-.section2 {
-    margin: 2% 0 10% 0;
-}
-
-
-.methodSection2{
-    padding: 0 8% 5% 8%;
-    display:grid;
     justify-content: center;
+    margin: 0 2rem 0 2rem;
+}
+
+/*Presentación profesor@*/
+
+.containerPresentacion{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+.containerPresentacion>h1{
+    margin: 2rem 0 2rem 0;
+    color:black;
     
 }
 
-.methodSection2>h1{
-    display: grid;
+.infoPresentacion{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: center;
-    padding: 0 0 2% 0;
+    background-color: var(--secColor);
+    padding: 2em;
+    border-radius: 3px;
 }
 
-.methodSection2>p{
-    padding: 5% 5% 5% 5%;
-    font-size: 22px;
-    background-color: #414141;
-    color:white;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+.imgPresentacion{
+    height: 100%; 
+    border: 2px solid var(--mainColor);
+    padding: 1em;
 }
 
-.activitiesSection2>h1{ 
-    display:grid;
-    justify-content:center;
-    margin: 0 0 2% 0;
+.imgPresentacion>img{
+    height: 300px;
 }
 
-.activitiesSection2{
-    display:grid;
-    grid-template-columns: auto;
-}
-
-.activitiesinfoSection2{
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-    background-color: #414141;
-    margin: 0 20% 0 20%;
-}
-
-.activity{
-    display: grid;
-    grid-template-columns: 5% auto;
-    margin: 0 20% 0 0%;
-}
-
-.activity>p{
-    padding: 0 0 0 10%; 
-    color:white;
-    font-size:20px;
-}
-
-.activity>h1{
-    display: grid;
-    justify-content:center;
-    color: white;
-    background-color: #325a7f;
-}
-
-
-
-/*section3---------------REVISION*/
-
-.projectSection3 {
+.textoPresentacion{
+    margin: 0 2rem 0 2rem;
+    display: flex;
+    flex-flow: column wrap;
     align-items: center;
-    padding: 0 5% 10% 5%;
-}
-
-.titlecaptionSection3>img{
-    max-width: 400px;
-}
-
-.titlecaptionSection3>h1{
-    padding: 0 0 1% 0;
-}
-
-table,
-th,
-td {
-    border: 2px solid black;
-    padding: 10px;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-table{
-    background-color: #9b9b9b;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.titlesTable{
-    background-color: #325a7f;
-}
-
-/*section4------------- LO TENGO QUE SOLUCIONAR*/
-
-.section4>h1{
-    display:grid;
     justify-content: center;
-    padding: 0 0 2% 0;
-}
-.cards {
-    display: flex;
-    justify-content: space-evenly;
+    width: 350px; 
 }
 
-.cards .card {
-    background: #414141;
-    display: flex;
-    width: 40%;
-    height: 200px;
+.textoPresentacion>h3{
+    margin: 1rem 0 1rem 0;
+}
+
+/*Descripcion del semillero*/
+
+.infoSemillero{
+    display: grid;
+    grid-template-columns: 35% auto 35%;
+    gap: 0.5rem;
     align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    margin: 4em 4em 4em 4em;
+    
 }
 
-.cards .card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 3px solid #325a7f;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .card>.contenido-texto-card {
-    width: 60%;
-    color: #325a7f;
-}
-
-.cards .card>.contenido-texto-card p {
-    font-weight: 300;
-    padding-top: 5px;
-    color:white;
-}
-
-/*section5*/
-.section5{
+.infoSemillero>img{
+    width: 400px;
     align-items: center;
-    padding: 0 20% 10% 20%;
+    justify-content: center;
 }
 
-.titlecaptionSection5>img{
-    max-width: 400px;
+.containerDescripcion{
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    align-items: center;
+    background-color: var(--secColor);
+    min-height: auto;
+    height: 500px;
+    box-shadow: 0px 10px 15px -3px var(--secColor);
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.containerDescripcion>h1{
+    margin-top: 1em;
 }
 
 
+.infoDescripcion{
+    margin: 2em;
+    font-size: 1.8em;
+}
+
+.containerObjetivos{ 
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secColor);
+    height: 500px;
+    box-shadow: 0px 10px 15px -3px var(--secColor);
+}
+
+.containerProyectos>h1{
+    margin:0.5em;
+}
+
+.infoProyectos{
+    font-size: 11px;
+    margin:0.5em;
+}
+
+.infoProyectos>p{
+    margin: 1em;
+}
+
+.infoProyectos>ul>li{
+    margin: 1em;
+}
+.infoProyectos>h3{
+    margin: 1em;
+}
+
+.infoProyectos>ul>li{
+    list-style: none;
+}
+
+/*lineas de inv*/
+
+.containerLineasInv{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 8rem 0;
+  }
+  
+  .lineaInv:nth-child(2){
+      height: 350px;
+      font-size: 15px;
+  }
+  
+  .lineaInv:nth-child(3){
+      height: 350px;
+  }
+  
+  
+  .fondoLineasInv{
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 0 60% 0 60%;
+      z-index: -1;
+      background-color: var(--mainColor);
+      box-shadow: 0px 10px 15px -3px var(--secColor);
+  }
+  
+  
+  .lineaInv{
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 400px;
+      margin: 2em;
+      background-color: var(--secColor);
+      color: var(--fontColor);
+      padding: 2em;
+      min-width: 400px;
+      box-shadow: 0px 10px 15px -3px var(--secColor);
+      font-size: 12px;
+      border-radius: 3px;
+  }
+  
+  
+  .lineaInv>h3{
+      margin: 0.5em;
+  }
+
+
+  /*boton de registro*/
+
+.ingresaContainer{
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 2em 0 2em 0;
+}
+
+.infoRegistro{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.lineas{
+    height: 5px;
+    width: 300px;
+    background-color: var(--thirdColor)
+}
+
+.ingresaContainer>h2{
+    color: black !important;
+}
+
+.linkRegistro{
+    background-color: var(--thirdColor);  
+    padding: 2em; 
+    border-radius: 10px;
+    margin: 1em;
+    cursor: pointer; 
+}
+
+.linkRegistro:hover{
+    background-color: var(--secColor);
+}
+
+.infoRegistro:hover .lineas{
+    background-color: var(--secColor);
+}
+
+
+.linkRegistro>a{
+    display: flex;
+    color: var(--fontColor) !important;
+    text-decoration: none;
+    align-items: center;
+    
+}
 
 
 /*Para el footer (parte final de la pagina)*/
