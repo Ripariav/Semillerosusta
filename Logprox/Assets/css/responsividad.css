@@ -1,10 +1,11 @@
-/*RESPONSIVIDAD*/
-@media screen and (max-width:1850px) {
+@media screen and (max-width:1000px) {
     
-   
-
+    /*esto es para la cabeza*/
+    header {
+        background-position: center;
+    }
+    
 }
-
 
 @media screen and (max-width:1600px) {
     
@@ -43,8 +44,12 @@
     
 }
 
-@media screen and (max-width:500px) {
-    
+@media screen and (max-width:800px) {
+
+    body{
+        font-size: 10px;
+        background-image: none;
+    }
     nav {
         text-align: center;
         padding: 30px 0 0 0;
@@ -52,13 +57,118 @@
     nav>a {
         margin-right: 5px;
     }
-    .textos-header h1 {
+    .textos-heather h1 {
         font-size: 35px;
     }
-    .textos-header h2 {
-        font-size: 20px;
+    .textos-heather h2 {
+        font-size: 5px;
+    }
+    /*info cuerpo*/
+
+    .infoPresentacion{
+        font-size: 8px;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    .imgPresentacion{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .textoPresentacion{
+        width: 200px;
+    }
+
+    .infoObjetivos{
+        font-size: 8px;
+    }
+
+    .infoSemillero{
+        font-size: 10px;
+        margin: 8em 0 8em 0;
+    }
+
+    .containerDescripcion{
+        height: auto;
+        width: 300px;
+    }
+
+    .containerDescripcion>h1{
+        font-size: 13px;
+    }
+
+    .infoDescripcion{
+        font-size: 0.8em;
+        height: 200px;
+    }
+
+    .lineaInv{
+        width: 200px;
+        height: auto;
+        min-width: 0px;
+    }
+
+    .infoInv{
+        font-size: 8px;
+    }
+
+    .containerObjetivos{
+        width: 300px;
+
+    }
+    .containerLineasInv{
+        max-width: 350px;
+
+    }
+
+    .imgPresentacion>img{
+        width: 150px;
+        height: 200px;
     }
     
+
+    
+    .containerPresentacion{
+        width: 200px;
+    }
+
+    .infoSemillero>img{
+        width: 200px;
+    }
+
+    .infoSemillero{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% auto 35%;
+        row-gap: 5em;
+    }
+
+    
+
+
+    .enfoque{
+        width: 200px;
+    }
+
+    .containerEnfoques{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .lineas{
+        width: 100px;
+    }
+
+    .fondoLineasInv{
+        height: 200px;
+        width: 200px;
+    }
+
+    .ingresaContainer>h2{
+        font-size: 10px;
+    }
+
     /* Contacto */
     .contenedor-footer {
         flex-direction: column;
