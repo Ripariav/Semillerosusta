@@ -1,31 +1,10 @@
-/*RESPONSIVIDAD*/
-@media screen and (max-width:1850px) {
+@media screen and (max-width:1000px) {
     
-    /*Section1*/
-    
-    .infoSection1>img{
-        max-width: 100%;
+    /*esto es para la cabeza*/
+    header {
+        background-position: center;
     }
     
-    .textSection1>p{
-        font-size:20px;
-        padding-bottom: 5%;
-    }
-
-    .infoSection1{
-        margin: 0 12% 0 12%;
-    }
-
-    .infoSection1{
-        display: grid;
-        grid-template-columns: auto;
-    }
-
-    /*section2*/
-    .methodSection2>p{
-        margin: 0 12% 0 12%;
-    }
-
 }
 
 @media screen and (max-width:1600px) {
@@ -36,7 +15,7 @@
     }
 
     .infoDescripcion{
-        font-size: 10px;
+        font-size: 1.5em;
     }
     
     
@@ -50,10 +29,10 @@
     }
 
     .containerDescripcion>h1{
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     .infoDescripcion{
-        font-size: 10px;
+        font-size: 1.2em;
     }
     
     .containerObjetivos>h1{
@@ -65,66 +44,12 @@
     
 }
 
+@media screen and (max-width:800px) {
 
-@media screen and (max-width:1000px) {
-    
-    /*esto es para la cabeza*/
-    header {
-        background-position: center;
+    body{
+        font-size: 10px;
+        background-image: none;
     }
-    
-    /*section1*/
-    .section1 {
-        width: 95%;
-    }
-    /*tables*/
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-    /*section2*/
-    .activity{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0 0 0 0;
-        padding: 0 0 5% 0;
-    }
-    .activity>p{
-        padding: 2% 0 0 5%;
-    }
-
-    /* Tables */
-    .cards {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .cards .card {
-        width: 90%;
-    }
-    .cards .card:first-child {
-        margin-bottom: 30px;
-    }
-    /* Contacto */
-    .servicio-cont {
-        justify-content: center;
-        flex-direction: column;
-    }
-    .servicio-ind {
-        width: 100%;
-        text-align: center;
-    }
-    .servicio-ind:nth-child(1),
-    .servicio-ind:nth-child(2) {
-        margin-bottom: 60px;
-    }
-    .servicio-ind img {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width:500px) {
     nav {
         text-align: center;
         padding: 30px 0 0 0;
@@ -132,39 +57,115 @@
     nav>a {
         margin-right: 5px;
     }
-    .textos-header h1 {
+    .textos-heather h1 {
         font-size: 35px;
     }
-    .textos-header h2 {
-        font-size: 20px;
+    .textos-heather h2 {
+        font-size: 5px;
     }
-    /* Quienes somos */
-    .section1>img {
-        margin-bottom: 60px;
-        width: 99%;
+    /*info cuerpo*/
+
+    .infoPresentacion{
+        font-size: 8px;
+        flex-wrap: wrap;
+        width: 250px;
     }
-    .textSection1 {
-        width: 95%;
-    }
-    /*Nuestros Proyectos*/
-    .proyectos {
-        width: 90%;
-    }
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-    /* Estudiantes */
-    .cards .card {
-        height: 450px;
+    .imgPresentacion{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-flow: column wrap;
     }
-    .cards .card img {
-        width: 90px;
-        height: 90px;
+
+    .textoPresentacion{
+        width: 200px;
     }
+
+    .infoObjetivos{
+        font-size: 8px;
+    }
+
+    .infoSemillero{
+        font-size: 10px;
+        margin: 8em 0 8em 0;
+    }
+
+    .containerDescripcion{
+        height: auto;
+        width: 300px;
+    }
+
+    .containerDescripcion>h1{
+        font-size: 13px;
+    }
+
+    .infoDescripcion{
+        font-size: 0.8em;
+        height: 200px;
+    }
+
+    .lineaInv{
+        width: 200px;
+        height: auto;
+        min-width: 0px;
+    }
+
+    .infoInv{
+        font-size: 8px;
+    }
+
+    .containerObjetivos{
+        width: 300px;
+
+    }
+    .containerLineasInv{
+        max-width: 350px;
+
+    }
+
+    .imgPresentacion>img{
+        width: 150px;
+        height: 200px;
+    }
+    
+
+    
+    .containerPresentacion{
+        width: 200px;
+    }
+
+    .infoSemillero>img{
+        width: 200px;
+    }
+
+    .infoSemillero{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% auto 35%;
+        row-gap: 5em;
+    }
+
+    .enfoque{
+        width: 200px;
+    }
+
+    .containerEnfoques{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .lineas{
+        width: 100px;
+    }
+
+    .fondoLineasInv{
+        height: 250px;
+        width: 250px;
+    }
+
+    .ingresaContainer>h2{
+        font-size: 10px;
+    }
+
     /* Contacto */
     .contenedor-footer {
         flex-direction: column;
