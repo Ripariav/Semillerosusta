@@ -92,12 +92,14 @@ body {
 
 .semilleros {
 	cursor: pointer;
+
 }
 
 .subMenu {
 	display: flex;
 	flex-flow: column wrap;
 	position: absolute;
+	
 }
 
 .subMenu>ul>li {
@@ -139,6 +141,11 @@ body {
 	flex-flow: column wrap;
 	padding: 1em 1em 20em 1em;
 	box-shadow: 0 -12px 20px -8px rgb(14, 27, 60);
+}
+
+.bloqueContenido>h2{
+	color: black;
+	font-size: 22px;
 }
 
 .swiper {
