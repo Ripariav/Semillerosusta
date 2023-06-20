@@ -88,6 +88,25 @@
         margin: 8em 0 8em 0;
     }
 
+    .containerMisionVision{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .containerMision{
+        width: 300px;
+    }
+    .mision{
+        width:300px;
+    }
+
+    .containerVision{
+        width: 300px;
+    }
+    .vision{
+        width:300px;
+    }
+
     .containerDescripcion{
         height: auto;
         width: 300px;
@@ -103,9 +122,13 @@
     }
 
     .lineaInv{
-        width: 200px;
+        width: 300px;
         height: auto;
         min-width: 0px;
+    }
+
+    .lineaInv>ul>li{
+        font-size: 8px;
     }
 
     .infoInv{
